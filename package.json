@@ -10,11 +10,11 @@
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "json-server": "^0.15.1"
   },
   "scripts": {
-    "start": "PORT=8000 react-scripts start",
-    "server": "json-server --watch db.json -p 8002"
+    "start": "set PORT=8000 && react-scripts start"
   },
   "eslintConfig": {
     "extends": [
